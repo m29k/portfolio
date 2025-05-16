@@ -50,9 +50,7 @@ A clean, modern, and responsive personal portfolio website built with HTML, CSS,
 - **LinkedIn**: [Manish Kumar](https://www.linkedin.com/in/manish-kumar-8634ba34a/)
 
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
@@ -61,5 +59,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspiration from various portfolio designs across the web
 
 ---
-
-© 2025 Manish Kumar. 
