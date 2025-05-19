@@ -59,6 +59,7 @@
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    height: auto;
   }
   
   .nav-content {
@@ -750,17 +751,23 @@
       top: -100%;
       left: 0;
       width: 100%;
-      height: auto;
+      height: 0;
       flex-direction: column;
       background: var(--background);
-      padding: 2rem;
+      padding: 0;
       box-shadow: 0 10px 20px var(--shadow);
       transition: all 0.4s ease;
       gap: 1.5rem;
+      z-index: 999;
+      overflow: hidden;
     }
   
     .nav-links.active {
       top: 60px;
+      height: auto;
+      max-height: 300px;
+      padding: 1.5rem;
+      overflow-y: auto;
     }
   
     .hero h1 {

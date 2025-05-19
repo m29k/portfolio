@@ -27,8 +27,23 @@ const navContent = document.querySelector('.nav-content');
 const navLinks = document.querySelector('.nav-links');
 navContent.insertBefore(menuToggle, navLinks);
 
+// Toggle menu when clicking the menu button
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-content') && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
+});
+
+// Close menu when scrolling
+window.addEventListener('scroll', () => {
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
 });
 
 // Form submission handling
